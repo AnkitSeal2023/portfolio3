@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ankit Seal - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+      <!-- Navigation Bar -->
+      <nav>
+        <div id="home">
+          <div class="profile_name">
+            Ankit Seal
+            <div class="contact_info">
+              <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+              ankitseal11@email.com
+            </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            +91 5456218456
+
+          </div>
+          </div>
+          <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <!-- Add the links for Skills, Projects and Recommendation here -->
+            <a class="topmenu" href="#skills">My Skills</a>
+            <a class="topmenu" href="#projects">My projects</a>
+            <a class="topmenu" href="#all_recommendations">Recommendations</a>
+          </div>
+        </div>    
+      </nav>
+      <div id="full">
+      <!-- About Me -->
+      <section id="about-me" class="container">
+        <div>
+          <img src="html_finalprojimages\ezgif-3-ad531ca9e4.gif" height="10" width="10" class="profile_image"/>
+        </div>
+        <div>
+            <h1>
+              Hi, I'm Ankit Seal! <img src="https://media.tenor.com/yWSRmymbuBkAAAAM/waving-hi.gif" width="60px"/>
+            </h1>
+            <p>
+              I'm on a journey of mastering full-stack development, continuously increasing my skills to create wonderful websites. Beyond the world of programming, I find joy in the fields of video editing.
+            </p>
+        </div>
+      </section>
+              
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div style="clear:both;"></div>
+
+        <div class="all_skills">
+          <div class="skill">
+            <img src="html_finalprojimages/html5.png"/>
+            <h6>HTML</h6>
+            <p>2 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/js.jpeg"/>
+            <h6>JavaScript</h6>
+            <p>3 years experience</p>
+          </div>  
+          
+          <div class="skill">
+            <img src="html_finalprojimages\CSS3.png">
+            <h6>CSS</h6>
+            <p>2 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages\node.png">
+            <h6>Node.js</h6>
+            <p>1 year of experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages\react.png">
+            <h6>React</h6>
+            <p>1 year of experience</p>
+          </div>
+          <!-- Add more skills here -->
+        </div>
+      </section>
+          
+      <!-- Projects -->
+      <section class="projects-card" id="projects">
+        <h2>
+          Projects
+        </h2>
+        <div style="clear:both;"></div>
+
+          <div id="projects-container" class="projects-container">
+            <div class="project-card">
+              <h3>Social Media app</h3>
+              <ul>
+                <li>Developed a secure end to end encrypted social media using https protocol </li>
+              </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+              <h3>Discord Bot</h3>
+              <ul>
+                <li>Developed and deployed a discord bot that can moderate users and play music on request</li>
+              </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+              <h3>Shopping Website</h3>
+              <ul>
+                <li>Developed an online shopping website</li>
+              </ul>
+            </div>
+      </div>
+      </section>
+      <div style="clear:both;"></div>
+
+      <!-- Recommendations -->
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div style="clear:both;"></div>
+        <div class="all_recommendations" id="all_recommendations">
+          <div class="recommendation">
+            <span>&#8220;</span>
+            In my time working with Ankit Seal, I've been consistently amazed by their innovative approach to solving complex problems in the realm of computer science. 
+            Their ability to think outside the box and devise elegant solutions has led to significant advancements in our projects.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Ankit Seal possesses an unparalleled mastery of algorithms and data structures. 
+            Their in-depth understanding and utilization of these foundational concepts have paved the way for optimized and efficient software development in our team.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            As a software architect, Ankit Seal has repeatedly demonstrated their expertise in designing and implementing scalable systems. 
+            Their architectural decisions have not only ensured the smooth functioning of our applications under high loads but have also contributed to substantial cost savings. 
+            <span>&#8221;</span>
+          </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+    </div>
+  </body>
+</html>
